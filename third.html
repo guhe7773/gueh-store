@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李丽莎的上进之路 - 从法学毕业生到员额检察官</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        :root {
+            --primary: #1a3c6e;
+            --secondary: #c62828;
+            --accent: #ffc107;
+            --light: #f5f5f5;
+            --dark: #333;
+            --success: #4caf50;
+            --timeline: #e0e0e0;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), #2c5282);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+        }
+        
+        .profile-info {
+            text-align: left;
+            max-width: 500px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .timeline-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            position: relative;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: var(--timeline);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            width: 50%;
+            padding: 1.5rem 2.5rem;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border: 4px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--primary);
+        }
+        
+        .timeline-item:nth-child(odd)::after {
+            right: -10px;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: var(--primary);
+        }
+        
+        .timeline-year {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-year i {
+            margin-right: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .timeline-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .achievement {
+            background: var(--light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .achievement i {
+            color: var(--accent);
+        }
+        
+        .exam-section {
+            background: var(--light);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .exam-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .exam-timeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin: 3rem 0;
+        }
+        
+        .exam-timeline::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--timeline);
+            z-index: 1;
+        }
+        
+        .exam-item {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            width: 20%;
+        }
+        
+        .exam-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid var(--timeline);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .exam-item.active .exam-circle {
+            border-color: var(--success);
+            background: var(--success);
+            color: white;
+        }
+        
+        .exam-item.failed .exam-circle {
+            border-color: var(--secondary);
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .exam-info {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            display: none;
+        }
+        
+        .exam-info.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .badges-section {
+            background: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .badges-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .badge {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #eee;
+        }
+        
+        .badge:hover {
+            transform: translateY(-10px);
+        }
+        
+        .badge-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .badge-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+        
+        .milestone {
+            text-align: center;
+            margin: 4rem auto;
+            max-width: 800px;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .milestone::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--secondary);
+            border-radius: 50%;
+        }
+        
+        .milestone h2 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        
+        .inspiration-quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item:nth-child(odd)::after,
+            .timeline-item:nth-child(even)::after {
+                left: 20px;
+            }
+            
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-info {
+                text-align: center;
+            }
+            
+            .exam-timeline {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+            
+            .exam-timeline::before {
+                display: none;
+            }
+            
+            .exam-item {
+                width: 100%;
+            }
+        }
+        
+        .interactive-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .interactive-btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #777;
+        }
+        
+        .progress-container {
+            margin: 2rem auto;
+            max-width: 800px;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background: var(--timeline);
+            border-radius: 5px;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            width: 0;
+            transition: width 1.5s ease;
+        }
+        
+        .progress-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .exam-btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .exam-btn:hover .exam-circle {
+            transform: scale(1.1);
+        }
+        
+        .struggle-section {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .struggle-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .struggle-quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin: 2rem 0;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>李丽莎的上进之路</h1>
+            <p class="subtitle">从宁波大学法学毕业生到员额检察官的奋斗历程</p>
+            
+            <div class="profile-container">
+                <div class="profile-img">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="profile-info">
+                    <h2>李丽莎</h2>
+                    <p>宁波大学法学学士，历经四次法考失败不气馁，一次考公成功上岸，现任某市人民检察院员额检察官。</p>
+                    <button class="interactive-btn" id="viewJourney">
+                        <i class="fas fa-play"></i> 观看奋斗历程
+                    </button>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span>次法考挑战</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span>次考公成功</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span>年奋斗历程</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span>天坚持学习</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="progress-container">
+        <h2>职业发展历程</h2>
+        <div class="progress-bar">
+            <div class="progress" id="careerProgress"></div>
+        </div>
+        <div class="progress-labels">
+            <span>2015: 宁波大学毕业</span>
+            <span>2016-2019: 四次法考</span>
+            <span>2020: 考公成功</span>
+            <span>2021: 成为员额检察官</span>
+        </div>
+    </section>
+    
+    <section class="timeline-container">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2011-2015
+                    </div>
+                    <h3 class="timeline-title">宁波大学法学院</h3>
+                    <p class="timeline-description">在宁波大学法学院攻读法学学士学位，打下了坚实的法律理论基础，积极参加模拟法庭和法律援助活动。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-award"></i> 校级三好学生
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-graduation-cap"></i> 优秀毕业生
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2015">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2016
+                    </div>
+                    <h3 class="timeline-title">第一次法考失利</h3>
+                    <p class="timeline-description">首次参加国家统一法律职业资格考试，因缺乏实战经验，以12分之差未能通过。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-book"></i> 开始系统复习
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2016">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2017
+                    </div>
+                    <h3 class="timeline-title">第二次法考失利</h3>
+                    <p class="timeline-description">调整学习方法，加大真题练习量，但仍以8分之差未能通过考试。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-redo"></i> 调整学习策略
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2017">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2018
+                    </div>
+                    <h3 class="timeline-title">第三次法考失利</h3>
+                    <p class="timeline-description">参加专业培训班，系统复习各科知识点，但仍以5分之差与通过线擦肩而过。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-chalkboard-teacher"></i> 参加专业培训
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2018">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2019
+                    </div>
+                    <h3 class="timeline-title">第四次法考成功</h3>
+                    <p class="timeline-description">坚持不懈，总结前三次失败经验，最终以超出通过线15分的成绩成功通过法考。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-trophy"></i> 法考通过
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-star"></i> 取得法律职业资格
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2019">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2020
+                    </div>
+                    <h3 class="timeline-title">公务员考试成功</h3>
+                    <p class="timeline-description">参加省公务员考试，报考某市人民检察院，以笔试第三、面试第一的成绩成功上岸。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-user-tie"></i> 公务员录取
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-building"></i> 进入检察院工作
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2020">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">
+                        <i class="fas fa-calendar-alt"></i> 2021-至今
+                    </div>
+                    <h3 class="timeline-title">员额检察官</h3>
+                    <p class="timeline-description">经过一年实习期和考核，成功晋升为员额检察官，独立承办案件，维护司法公正。</p>
+                    <div class="achievements">
+                        <div class="achievement">
+                            <i class="fas fa-gavel"></i> 员额检察官
+                        </div>
+                        <div class="achievement">
+                            <i class="fas fa-balance-scale"></i> 独立承办案件
+                        </div>
+                    </div>
+                    <button class="interactive-btn view-details" data-year="2021">
+                        <i class="fas fa-info-circle"></i> 了解详情
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="exam-section">
+        <div class="exam-container">
+            <h2>法考奋斗历程</h2>
+            <p>四次法考，从不言弃，终获成功</p>
+            
+            <div class="exam-timeline">
+                <div class="exam-item failed" id="exam1">
+                    <button class="exam-btn">
+                        <div class="exam-circle">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="exam-label">第一次法考<br>2016年</div>
+                    </button>
+                </div>
+                
+                <div class="exam-item failed" id="exam2">
+                    <button class="exam-btn">
+                        <div class="exam-circle">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="exam-label">第二次法考<br>2017年</div>
+                    </button>
+                </div>
+                
+                <div class="exam-item failed" id="exam3">
+                    <button class="exam-btn">
+                        <div class="exam-circle">
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <div class="exam-label">第三次法考<br>2018年</div>
+                    </button>
+                </div>
+                
+                <div class="exam-item active" id="exam4">
+                    <button class="exam-btn">
+                        <div class="exam-circle">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="exam-label">第四次法考<br>2019年</div>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="exam-info" id="examInfo1">
+                <h3>第一次法考 (2016年)</h3>
+                <p>首次参加法考，缺乏实战经验，复习方法不够系统。虽然投入了大量时间，但对考试重点把握不准，最终以12分之差未能通过。</p>
+                <p><strong>经验教训：</strong> 需要更系统的复习计划和更多真题练习。</p>
+            </div>
+            
+            <div class="exam-info" id="examInfo2">
+                <h3>第二次法考 (2017年)</h3>
+                <p>调整了学习方法，增加了真题练习量，但对部分难点科目掌握不够扎实，最终以8分之差再次失利。</p>
+                <p><strong>经验教训：</strong> 需要针对薄弱科目进行专项突破。</p>
+            </div>
+            
+            <div class="exam-info" id="examInfo3">
+                <h3>第三次法考 (2018年)</h3>
+                <p>参加了专业培训班，系统复习各科知识点，但在考试时因紧张导致时间分配不合理，最终以5分之差与通过线擦肩而过。</p>
+                <p><strong>经验教训：</strong> 需要加强模拟考试训练，提高应试能力。</p>
+            </div>
+            
+            <div class="exam-info active" id="examInfo4">
+                <h3>第四次法考 (2019年)</h3>
+                <p>总结前三次失败经验，制定了更科学的学习计划，加强了模拟考试训练，最终以超出通过线15分的成绩成功通过法考。</p>
+                <p><strong>成功关键：</strong> 坚持不懈，科学备考，心理素质提升。</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="struggle-section">
+        <div class="struggle-content">
+            <h2>坚持与信念</h2>
+            <p class="struggle-quote">"四次法考失败没有击垮我，反而让我更加坚定了从事法律职业的决心。每一次失败都是通往成功的阶梯。"</p>
+            <p>—— 李丽莎</p>
+        </div>
+    </section>
+    
+    <section class="badges-section">
+        <div class="badges-container">
+            <h2>荣誉与成就</h2>
+            <p>李丽莎在奋斗历程中获得的荣誉和成就</p>
+            
+            <div class="badges-grid">
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="badge-title">宁波大学优秀毕业生</h3>
+                    <p>2015年以优异成绩从宁波大学毕业，获得法学学士学位。</p>
+                </div>
+                
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="badge-title">法律职业资格证书</h3>
+                    <p>2019年通过国家统一法律职业资格考试，获得法律职业资格。</p>
+                </div>
+                
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="badge-title">公务员录用</h3>
+                    <p>2020年通过公务员考试，被某市人民检察院录用。</p>
+                </div>
+                
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3 class="badge-title">员额检察官</h3>
+                    <p>2021年通过考核，成为员额检察官，独立承办案件。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="milestone">
+        <h2>奋斗感言</h2>
+        <p>"六年的奋斗历程让我明白，成功从来不会一蹴而就。四次的法考失败教会我坚持的意义，一次考公成功让我相信努力终有回报。如今作为一名员额检察官，我将以同样的坚韧和执着，守护司法公正，维护社会公平。"</p>
+        <button class="interactive-btn" id="viewMilestone">
+            <i class="fas fa-star"></i> 查看奋斗故事
+        </button>
+    </div>
+    
+    <footer>
+        <p class="inspiration-quote">"正义可能会迟到，但永远不会缺席。作为一名检察官，我的使命就是确保正义能够及时到来。"</p>
+        <p>—— 李丽莎检察官</p>
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">© 2023 李丽莎的上进之路 | 设计用于展示坚持不懈的奋斗精神</p>
+    </footer>
+    
+    <!-- 模态框 -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">职业阶段详情</h2>
+            <div id="modalContent">
+                <!-- 动态内容 -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 职业阶段详情数据
+        const careerDetails = {
+            "2015": {
+                title: "宁波大学法学院 (2011-2015)",
+                content: `
+                    <p>李丽莎于2011年考入宁波大学法学院，开始了她的法学学习之旅。</p>
+                    <p>在大学期间，她不仅认真学习各门法学课程，还积极参加模拟法庭、法律援助等实践活动。她的毕业论文《论我国检察官独立行使职权的保障机制》被评为优秀毕业论文。</p>
+                    <p><strong>主要成就：</strong></p>
+                    <ul>
+                        <li>连续三年获得校级奖学金</li>
+                        <li>担任法学院学生会学习部部长</li>
+                        <li>参与法律援助活动，帮助弱势群体</li>
+                        <li>获得"优秀毕业生"称号</li>
+                    </ul>
+                    <p>大学四年的学习为她后来的法律职业道路奠定了坚实基础。</p>
+                `
+            },
+            "2016": {
+                title: "第一次法考失利 (2016年)",
+                content: `
+                    <p>大学毕业后，李丽莎立即投入到法考的复习中。这是她第一次参加国家统一法律职业资格考试。</p>
+                    <p>由于缺乏实战经验，她的复习方法不够系统，虽然投入了大量时间，但对考试重点把握不准。最终成绩距离通过线还差12分。</p>
+                    <p><strong>反思与总结：</strong></p>
+                    <ul>
+                        <li>复习计划不够科学，知识点覆盖不全面</li>
+                        <li>真题练习不足，对考试形式不熟悉</li>
+                        <li>时间分配不合理，某些科目投入时间过多</li>
+                    </ul>
+                    <p>这次失败让她认识到法考的难度，也让她更加坚定了要通过考试的决心。</p>
+                `
+            },
+            "2017": {
+                title: "第二次法考失利 (2017年)",
+                content: `
+                    <p>在第一次失败后，李丽莎调整了学习方法，增加了真题练习量。</p>
+                    <p>她制定了更详细的复习计划，每天学习10小时以上。然而，她对部分难点科目（如商经法、三国法）掌握不够扎实，最终成绩距离通过线还差8分。</p>
+                    <p><strong>反思与总结：</strong></p>
+                    <ul>
+                        <li>需要针对薄弱科目进行专项突破</li>
+                        <li>理论知识掌握不够牢固</li>
+                        <li>考试时心理素质有待提高</li>
+                    </ul>
+                    <p>连续两次失败让她倍感压力，但她没有放弃，决定再次挑战。</p>
+                `
+            },
+            "2018": {
+                title: "第三次法考失利 (2018年)",
+                content: `
+                    <p>为了通过考试，李丽莎参加了专业的法考培训班，系统复习各科知识点。</p>
+                    <p>她按照培训班的计划认真学习，做了大量笔记和练习题。然而，在考试时因紧张导致时间分配不合理，最终成绩距离通过线仅差5分。</p>
+                    <p><strong>反思与总结：</strong></p>
+                    <ul>
+                        <li>需要加强模拟考试训练，提高应试能力</li>
+                        <li>考试策略有待改进</li>
+                        <li>心理素质需要进一步提升</li>
+                    </ul>
+                    <p>三次失败让李丽莎几乎想要放弃，但在家人和朋友的鼓励下，她决定最后再试一次。</p>
+                `
+            },
+            "2019": {
+                title: "第四次法考成功 (2019年)",
+                content: `
+                    <p>总结前三次失败经验，李丽莎制定了更科学的学习计划，加强了模拟考试训练。</p>
+                    <p>她不再盲目追求学习时长，而是注重学习效率。每天进行模拟考试，严格控制在规定时间内完成。最终，她以超出通过线15分的成绩成功通过法考。</p>
+                    <p><strong>成功经验：</strong></p>
+                    <ul>
+                        <li>科学的学习计划和时间管理</li>
+                        <li>大量的模拟考试训练</li>
+                        <li>良好的心理素质和考试策略</li>
+                        <li>坚持不懈的精神</li>
+                    </ul>
+                    <p>四年的坚持终于换来了成功，李丽莎获得了法律职业资格，为她的检察官梦想迈出了关键一步。</p>
+                `
+            },
+            "2020": {
+                title: "公务员考试成功 (2020年)",
+                content: `
+                    <p>通过法考后，李丽莎立即投入到公务员考试的复习中，目标是进入检察院工作。</p>
+                    <p>她报考了某市人民检察院的职位，竞争异常激烈。通过精心准备，她以笔试第三名的成绩进入面试，并在面试中表现出色，获得第一名，最终成功被录取。</p>
+                    <p><strong>备考经验：</strong></p>
+                    <ul>
+                        <li>系统复习行测和申论知识点</li>
+                        <li>大量练习真题，掌握考试规律</li>
+                        <li>参加面试培训，提高表达能力</li>
+                        <li>了解检察院工作特点，做好职业规划</li>
+                    </ul>
+                    <p>成功通过公务员考试，让李丽莎正式踏上了检察官的职业道路。</p>
+                `
+            },
+            "2021": {
+                title: "员额检察官 (2021年至今)",
+                content: `
+                    <p>进入检察院后，李丽莎经过一年的实习期和考核，成功晋升为员额检察官。</p>
+                    <p>作为员额检察官，她开始独立承办案件，包括审查逮捕、审查起诉、出庭支持公诉等。她严谨的工作态度和专业的法律素养得到了领导和同事的认可。</p>
+                    <p><strong>工作内容：</strong></p>
+                    <ul>
+                        <li>审查公安机关移送起诉的案件</li>
+                        <li>出庭支持公诉</li>
+                        <li>监督司法活动，保障司法公正</li>
+                        <li>参与社会治理，提出检察建议</li>
+                    </ul>
+                    <p>从法学毕业生到员额检察官，李丽莎用了六年时间。这段奋斗历程让她更加珍惜现在的工作，也让她坚信只要坚持不懈，梦想终会实现。</p>
+                `
+            }
+        };
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            // 进度条动画
+            setTimeout(() => {
+                document.getElementById('careerProgress').style.width = '100%';
+            }, 500);
+            
+            // 查看历程按钮
+            document.getElementById('viewJourney').addEventListener('click', function() {
+                document.querySelector('.timeline-container').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
+            
+            // 查看里程碑按钮
+            document.getElementById('viewMilestone').addEventListener('click', function() {
+                const modal = document.getElementById('detailModal');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalContent = document.getElementById('modalContent');
+                
+                modalTitle.textContent = "奋斗故事：从失败到成功的历程";
+                modalContent.innerHTML = `
+                    <p>李丽莎的奋斗历程是一个典型的从失败到成功的故事。她经历了四次法考失败，但从未放弃，最终在第五次尝试中成功通过考试。</p>
+                    <p><strong>关键转折点：</strong></p>
+                    <ul>
+                        <li><strong>第一次法考失败：</strong> 让她认识到考试的难度，开始系统复习</li>
+                        <li><strong>第二次法考失败：</strong> 让她意识到需要调整学习方法</li>
+                        <li><strong>第三次法考失败：</strong> 让她明白心理素质和考试策略的重要性</li>
+                        <li><strong>第四次法考成功：</strong> 科学备考和坚持不懈的结果</li>
+                        <li><strong>公务员考试成功：</strong> 实现了成为检察官的梦想</li>
+                    </ul>
+                    <p>李丽莎的故事告诉我们，成功往往需要经历多次失败，关键在于从失败中学习，不断调整策略，坚持到底。</p>
+                    <p>如今，作为一名员额检察官，李丽莎将继续以同样的坚韧和执着，守护司法公正，维护社会公平。</p>
+                `;
+                
+                modal.style.display = 'flex';
+            });
+            
+            // 详情按钮事件
+            document.querySelectorAll('.view-details').forEach(button => {
+                button.addEventListener('click', function() {
+                    const year = this.getAttribute('data-year');
+                    const detail = careerDetails[year];
+                    
+                    if (detail) {
+                        const modal = document.getElementById('detailModal');
+                        const modalTitle = document.getElementById('modalTitle');
+                        const modalContent = document.getElementById('modalContent');
+                        
+                        modalTitle.textContent = detail.title;
+                        modalContent.innerHTML = detail.content;
+                        
+                        modal.style.display = 'flex';
+                    }
+                });
+            });
+            
+            // 法考时间轴交互
+            document.querySelectorAll('.exam-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const examItem = this.closest('.exam-item');
+                    const examId = examItem.id;
+                    const examNumber = examId.replace('exam', '');
+                    
+                    // 隐藏所有考试信息
+                    document.querySelectorAll('.exam-info').forEach(info => {
+                        info.classList.remove('active');
+                    });
+                    
+                    // 显示当前考试信息
+                    document.getElementById(`examInfo${examNumber}`).classList.add('active');
+                });
+            });
+            
+            // 关闭模态框
+            document.querySelector('.close-modal').addEventListener('click', function() {
+                document.getElementById('detailModal').style.display = 'none';
+            });
+            
+            // 点击模态框外部关闭
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('detailModal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
